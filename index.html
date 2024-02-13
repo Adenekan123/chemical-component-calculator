@@ -3,64 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link href="css/output.css" rel="stylesheet" />
   </head>
   <body>
-    <h1 class="font-bold bg-slate-200 p-4 capitalize text-center">
-      Chemical component calculator;
-    </h1>
+    <div
+      class="wrapper w-full min-h-screen bg-gradient-to-tr from-[#414345] to-[#232526] px-6  md:px-72 py-8"
+    >
+      <header class="text-center">
+        <h2 class="font-[Orbitron] font-bold text-4xl md:text-5xl text-[#a5d8ff]">
+          chemEmaster.
+        </h2>
+        <p class=" text-lg md:text-xl mt-3 text-slate-300" style="line-height: 1.6;">
+          This online calculator you can use for computing the average molecular
+          weight (MW) of molecules by entering the chemical formulas (for
+          example C3H4OH(COOH)3 ). Or you can choose by one of the next two
+          option-lists, which contains a series of common organic compounds
+          (including their chemical formula) and all the elements.
+        </p>
 
-    <div class="p-8">
-      <h3 class="font-bold uppercase underline">Instructions</h3>
-      <ul class="list-decimal list-inside">
-        <li>
-          Open terminal,
-          <b
-            >Run: git clone
-            https://github.com/Adenekan123/chemical-component-calculator.git</b
-          >
-        </li>
-        <li>
-          <b>Run: cd chemical-component-calculator </b>
-        </li>
-        <li>
-          <b>Run: code .</b> to open the project on VSCode
-        </li>
-        <li>
-          <b>Open VSCode terminal</b>
-        </li>
-        <li>
-            <b>Run: npm install</b>
-          </li>
-        <li>
-          <b>Run: git branch <u>branch name</u> </b>  to create a new branch.
-        </li>
-        <li>
-          <b> Run: git switch <u>branch name</u></b> to switch to the newly
-          created branch
-        </li>
-        <li>
-          <b>Run: npm start</b>
-        </li>
-        <li>Start coding the UI.</li>
-        <li>
-            Make sure to run the following commands each day you worked on the branch;<br/>
-            <b>git add .</b><br/>
-            <b>git commit -m "changes made"</b><br/>
-            <b>git push origin <u>branch name</u></b>
-
-        </li>
-      </ul>
-    </div>
-
-    <div class="p-8">
-      <p>
-        <span class="text-red-500 font-bold">Note:</span> Visit
-        <a class="underline" target="_blank" href="https://tailwindcss.com/"
-          >https://tailwindcss.com/</a
-        >
-        for more information on how use your styles
-      </p>
+        <section class="main text-sm mt-12 font-[Lato]">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+            <div class="flex flex-col gap-y-2 text-left span">
+              <label for="components" class="text-white text-lg">Organic Compounds:</label>
+              <input list="components" name="components" id="components" class="p-4 bg-[#a5d8ff] rounded-sm" />
+              <datalist id="components">
+                <option value="Edge"></option>
+                <option value="Firefox"></option>
+                <option value="Chrome"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+              </datalist>
+            </div>
+            <div class="flex flex-col gap-y-2 text-left">
+              <label for="mratio" class="text-white text-lg">Molecular ratio:</label>
+              <input list="mratio" name="mratio" id="mratio" class="p-4 bg-[#a5d8ff] rounded-sm" />
+            </div>
+            <div class="mt-auto text-right pt-3 md:pt-0 ">
+              <button class="block w-full bg-slate-400 px-3 p-3 rounded-sm text-xl font-[600] hover:bg-slate-600  ">Calculate</button>
+            </div>
+          </div>
+        </section>
+      </header>
     </div>
   </body>
 </html>
