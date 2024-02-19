@@ -1,0 +1,552 @@
+[
+ {
+  "Components": "Choline chloride",
+  "MW": 139.63
+ },
+ {
+  "Components": "Acetic  acid",
+  "MW": 60.05
+ },
+ {
+  "Components": "Formic  acid",
+  "MW": 46.03
+ },
+ {
+  "Components": "Levulinic acid",
+  "MW": 116.11
+ },
+ {
+  "Components": "Betaine",
+  "MW": 117.15
+ },
+ {
+  "Components": "Malic  acid",
+  "MW": 134.09
+ },
+ {
+  "Components": "Propionic acid",
+  "MW": 74.08
+ },
+ {
+  "Components": "Butyric acid",
+  "MW": 88.11
+ },
+ {
+  "Components": "Benzoic acid",
+  "MW": 122.12
+ },
+ {
+  "Components": "Mannitol ",
+  "MW": 182.17
+ },
+ {
+  "Components": "Alanine",
+  "MW": 89.09
+ },
+ {
+  "Components": "Safrole",
+  "MW": 105.09
+ },
+ {
+  "Components": "Glycine",
+  "MW": 75.07
+ },
+ {
+  "Components": "Proline",
+  "MW": 115.13
+ },
+ {
+  "Components": "Methionine",
+  "MW": 149.21
+ },
+ {
+  "Components": "Aspartic acid",
+  "MW": 133.1
+ },
+ {
+  "Components": "Threonine",
+  "MW": 119.12
+ },
+ {
+  "Components": "Histidine",
+  "MW": 155.16
+ },
+ {
+  "Components": "Phenylalanine",
+  "MW": 165.19
+ },
+ {
+  "Components": "Tryptophan",
+  "MW": 204.23
+ },
+ {
+  "Components": "Tyrosine",
+  "MW": 181.19
+ },
+ {
+  "Components": "Histidine",
+  "MW": 155.16
+ },
+ {
+  "Components": "Valine",
+  "MW": 117.15
+ },
+ {
+  "Components": "Leucine",
+  "MW": 131.17
+ },
+ {
+  "Components": "Isoleucine",
+  "MW": 131.17
+ },
+ {
+  "Components": "Phenylacetic acid",
+  "MW": 136.15
+ },
+ {
+  "Components": "Benzyl alcohol",
+  "MW": 108.14
+ },
+ {
+  "Components": "Aniline",
+  "MW": 93.13
+ },
+ {
+  "Components": "Benzaldehyde",
+  "MW": 106.12
+ },
+ {
+  "Components": "Benzylamine",
+  "MW": 107.15
+ },
+ {
+  "Components": "Cinamic acid",
+  "MW": 148.16
+ },
+ {
+  "Components": "Eugenol",
+  "MW": 164.2
+ },
+ {
+  "Components": "Vanillin",
+  "MW": 152.15
+ },
+ {
+  "Components": "Limonene",
+  "MW": 136.24
+ },
+ {
+  "Components": "Octanol",
+  "MW": 130.23
+ },
+ {
+  "Components": "Terpineol",
+  "MW": 154.25
+ },
+ {
+  "Components": "Menthol",
+  "MW": 156.27
+ },
+ {
+  "Components": "Camphor",
+  "MW": 152.23
+ },
+ {
+  "Components": "Myrcene",
+  "MW": 136.24
+ },
+ {
+  "Components": "Furfural",
+  "MW": 96.08
+ },
+ {
+  "Components": "Camphene",
+  "MW": 136.24
+ },
+ {
+  "Components": "Isobornyl acetate",
+  "MW": 198.29
+ },
+ {
+  "Components": "Cinnamaldehyde",
+  "MW": 132.16
+ },
+ {
+  "Components": "Eugenol",
+  "MW": 164.2
+ },
+ {
+  "Components": "Linalool",
+  "MW": 154.25
+ },
+ {
+  "Components": "Geraniol",
+  "MW": 154.25
+ },
+ {
+  "Components": "Citronellol",
+  "MW": 154.25
+ },
+ {
+  "Components": "Carvone",
+  "MW": 150.22
+ },
+ {
+  "Components": "1;8-cineole",
+  "MW": 154.25
+ },
+ {
+  "Components": "Carvacrol",
+  "MW": 150.22
+ },
+ {
+  "Components": "Estragole",
+  "MW": 148.18
+ },
+ {
+  "Components": "Safrole",
+  "MW": 162.2
+ },
+ {
+  "Components": "Anethole",
+  "MW": 148.18
+ },
+ {
+  "Components": "Methyl salicylate",
+  "MW": 152.15
+ },
+ {
+  "Components": "Eugenol",
+  "MW": 164.2
+ },
+ {
+  "Components": "Cinnamyl alcohol",
+  "MW": 134.17
+ },
+ {
+  "Components": "Citronellol",
+  "MW": 154.25
+ },
+ {
+  "Components": "Alpha- terpineol",
+  "MW": 154.25
+ },
+ {
+  "Components": "Nerol",
+  "MW": 154.25
+ },
+ {
+  "Components": "Linalool",
+  "MW": 154.25
+ },
+ {
+  "Components": "Thymol",
+  "MW": 150.22
+ },
+ {
+  "Components": "Phenol",
+  "MW": 94.11
+ },
+ {
+  "Components": "Carvacrol",
+  "MW": 150.22
+ },
+ {
+  "Components": "Menthol",
+  "MW": 156.27
+ },
+ {
+  "Components": "urea",
+  "MW": 60.06
+ },
+ {
+  "Components": "malonicacid",
+  "MW": 104.06
+ },
+ {
+  "Components": "citricacid",
+  "MW": 192.12
+ },
+ null,
+ {
+  "Components": "succinicacid",
+  "MW": 118.09
+ },
+ null,
+ null,
+ {
+  "Components": "octanoicacid (caprylic acid)",
+  "MW": 144.21
+ },
+ {
+  "Components": "nonanoicacid (pelargonic acid)",
+  "MW": 158.23
+ },
+ {
+  "Components": "decanoicacid (capric acid)",
+  "MW": 172.26
+ },
+ {
+  "Components": "dodecanoicacid (lauric acid)",
+  "MW": 200.31
+ },
+ {
+  "Components": "tetradecanoicacid (myristic acid)",
+  "MW": 228.37
+ },
+ {
+  "Components": "hexadecanoicacid (palmitic acid)",
+  "MW": 256.43
+ },
+ {
+  "Components": "octadecanoicacid (stearic acid)",
+  "MW": 284.48
+ },
+ {
+  "Components": "tetradecanol",
+  "MW": 214.39
+ },
+ {
+  "Components": "hexadecanol",
+  "MW": 242.44
+ },
+ {
+  "Components": "octadecanol",
+  "MW": 270.5
+ },
+ {
+  "Components": "glucose",
+  "MW": 180.15
+ },
+ {
+  "Components": "fructose",
+  "MW": 180.16
+ },
+ {
+  "Components": "sucrose",
+  "MW": 342.3
+ },
+ {
+  "Components": "xylose",
+  "MW": 150.13
+ },
+ {
+  "Components": "mannose",
+  "MW": 180.156
+ },
+ {
+  "Components": "arabinose",
+  "MW": 150.13
+ },
+ {
+  "Components": "3,4-dimethylphenol",
+  "MW": 122.17
+ },
+ {
+  "Components": "2,4,6-trimethylphenol",
+  "MW": 136.19
+ },
+ {
+  "MW": 116.11
+ },
+ {
+  "Components": "hydroquinone",
+  "MW": 110.11
+ },
+ {
+  "Components": "resorcinol",
+  "MW": 110.1
+ },
+ {
+  "Components": "phenylacetic acid",
+  "MW": 136.15
+ },
+ {
+  "Components": "oxalicacid",
+  "MW": 90.03
+ },
+ {
+  "Components": "phenol",
+  "MW": 94.11
+ },
+ {
+  "Components": "o-cresol (2-methylphenol)",
+  "MW": 108.14
+ },
+ {
+  "Components": "2,3-xylenol (2,3-dimethylphenol)",
+  "MW": 122.16
+ },
+ {
+  "Components": "ethylene glycol",
+  "MW": 62.07
+ },
+ {
+  "Components": "glycerol",
+  "MW": 92.09
+ },
+ {
+  "Components": "aspirin (acetylsalicylic acid)",
+  "MW": 180.15
+ },
+ {
+  "Components": "ibuprofen",
+  "MW": 206.28
+ },
+ {
+  "Components": "ketoprofen",
+  "MW": 254.28
+ },
+ {
+  "Components": "paracetamol (4-hydroxyacetanilide)",
+  "MW": 151.17
+ },
+ {
+  "Components": "glycolic acid",
+  "MW": 76.05
+ },
+ {
+  "Components": "glutaric acid (pentanedioic acid)",
+  "MW": 132.12
+ },
+ {
+  "MW": 117.15
+ },
+ {
+  "Components": "malic acid",
+  "MW": 134.08
+ },
+ {
+  "Components": "tartaric acid ",
+  "MW": 150.08
+ },
+ {
+  "Components": "lactic acid",
+  "MW": 90.08
+ },
+ {
+  "Components": "adipic acid (hexanedioicacid)",
+  "MW": 146.14
+ },
+ {
+  "Components": "pimelic acid (heptanedioic acid)",
+  "MW": 160.17
+ },
+ {
+  "Components": "suberic acid (octanedioicacid)",
+  "MW": 174.2
+ },
+ {
+  "Components": "cyclohexylpropionic acid",
+  "MW": 156.23
+ },
+ {
+  "Components": "cyclohexanecarboxylic acid",
+  "MW": 128.17
+ },
+ {
+  "Components": "phenylpropionic acid",
+  "MW": 150.17
+ },
+ {
+  "Components": "erythritol",
+  "MW": 122.12
+ },
+ {
+  "Components": "xylitol ",
+  "MW": 152.14
+ },
+ {
+  "Components": "sorbitol ",
+  "MW": 182.17
+ },
+ {
+  "Components": "menthol",
+  "MW": 156.27
+ },
+ {
+  "Components": "propionic acid",
+  "MW": 74.08
+ },
+ {
+  "Components": "thymol ",
+  "MW": 150.22
+ },
+ null,
+ {
+  "Components": "ChCl (choline chloride)",
+  "MW": 139.62
+ },
+ {
+  "Components": "[N1111]Cl (tetramethylammonium chloride)",
+  "MW": 121.67
+ },
+ null,
+ {
+  "Components": "[N2222]Cl (tetraethylammonium chloride)",
+  "MW": 121.67
+ },
+ null,
+ {
+  "Components": "[N3333]Cl (tetrapropylammonium chloride)",
+  "MW": 221.81
+ },
+ null,
+ {
+  "Components": "[N4444]Cl (tetrabutylammonium chloride)",
+  "MW": 277.9
+ },
+ null,
+ {
+  "Components": "[N2222]Br (tetraethylammonium bromide)",
+  "MW": 210.15
+ },
+ {
+  "Components": "[N3333]Br (tetraproylammonium bromide)",
+  "MW": 266.26
+ },
+ {
+  "Components": "[N4444]Br (tetrabutylammonium bromide)",
+  "MW": 322.37
+ },
+ {
+  "Components": "[N5555]Br (tetrapentylammonium bromide)",
+  "MW": 378.5
+ },
+ {
+  "Components": "[N6666]Br (tetrahexylammonium bromide)",
+  "MW": 434.58
+ },
+ {
+  "Components": "Ch[OAc] (choline acetate)",
+  "MW": 163.21
+ },
+ {
+  "Components": "[BzCh]Cl (benzyldimethyl(2-hydroxye-thyl)ammonium chloride)",
+  "MW": 215.72
+ },
+ {
+  "Components": "[C4MPyr]Cl (1-butyl-1-methylpyrrolidinium chloride)",
+  "MW": 174.67
+ },
+ {
+  "Components": "[C2MIm]Cl (1-ethyl-3-methylimidazolium chloride)",
+  "MW": 146.62
+ },
+ {
+  "Components": "[C2OHMIm]Cl (1-(2-hydroxyethyl)-3-methylimidazolium chloride)",
+  "MW": 162.62
+ },
+ {
+  "Components": "[NH4]Cl (ammonium chloride)",
+  "MW": 53.48
+ },
+ {
+  "Components": "[MeCh]Cl (methylcholine chloride)",
+  "MW": 195.69
+ },
+ {
+  "Components": "[C4Py]Cl (1-butylpyridinium chloride)",
+  "MW": 171.67
+ }
+]
