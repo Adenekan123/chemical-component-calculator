@@ -32,7 +32,7 @@ const MassCalcProvider = ({children}:{children:ReactNode}) => {
 
   const getComponentsAsync = useCallback(async () => {
     try {
-      const request = await fetch("../../data.json");
+      const request = await fetch("/data.json");
       const response = await request.json();
       if (response && Array.isArray(response)) setComponents(response);
     } catch (err) {
