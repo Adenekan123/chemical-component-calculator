@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
-import { DarkThemeToggle, Flowbite } from "flowbite-react";
+import {Flowbite } from "flowbite-react";
 import MassCalcProvider from "./context/mass_calc_privider/index.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <MassCalcProvider>
         <App />
       </MassCalcProvider>
-      <DarkThemeToggle />
+      {/* <DarkThemeToggle /> */}
     </Flowbite>
   </React.StrictMode>
 );

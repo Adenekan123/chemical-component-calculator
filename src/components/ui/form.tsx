@@ -22,7 +22,7 @@ const Form = ({ values, index }: { values: Tforms; index: number }) => {
 
   return (
     <>
-      <Modal show={openModal} onClose={() => setOpenModal(false)}>
+      <Modal show={openModal} onClose={() => setOpenModal(false)} className="bg-black">
         <Modal.Header>Component Lists</Modal.Header>
         <Modal.Body>
           <div className="flex flex-col">
@@ -47,16 +47,16 @@ const Form = ({ values, index }: { values: Tforms; index: number }) => {
           </Button>
         </Modal.Footer>
       </Modal>
-      <form className="flex flex-col gap-y-6 bg-[#28292b] rounded-lg py-8 px-12 shadow-md">
+      <form className="flex flex-col gap-y-6 bg-[#28292b] rounded-lg py-8 px-6 md:px-12 shadow-md">
         <div className="grid grid-cols-2 gap-x-6 gap-y-8">
           <div className="flex flex-col gap-y-2 text-left span">
             <div className="block">
-              <label htmlFor="mratio" className="text-slate-300 text-lg">
+              <label htmlFor="mratio" className="text-slate-300 md:text-lg block mb-1">
                 Select Component:
               </label>
             </div>
             <Button
-              className="p-3 h-full bg-[#313335] rounded-sm text-white border-0 outline-white focus:outline-white shadow-none"
+              className="p-1 bg-[#313335] rounded-sm text-white border-0 outline-white focus:outline-white shadow-none justify-start h-[56px]"
               onClick={() => setOpenModal(true)}
             >
               {formDetails.component ? formDetails.component.components : ""}

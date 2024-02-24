@@ -10,13 +10,13 @@ export interface TInput
 
 const UiInput = ({ label, ...rest }: TInput) => {
   return (
-    <div className="flex flex-col gap-y-2 text-left">
-      <label htmlFor="mratio" className="text-slate-300 text-lg">
+    <div className="flex flex-col gap-y-3 text-left md:text-lg">
+      <label htmlFor="mratio" className="text-slate-300">
         {label ? label + ":" : ""}
       </label>
       <input
         {...rest}
-        className="p-4 bg-[#313335] rounded-sm text-white border-0 outline-white focus:outline-white shadow-none"
+        className="p-4 bg-[#313335] rounded-sm text-white border-0 outline-white focus:outline-white shadow-none placeholder:text-slate-300"
       />
     </div>
   );

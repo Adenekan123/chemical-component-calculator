@@ -17,15 +17,11 @@ function App() {
             chemEmaster.
           </h2>
           <p className="text-lg md:text-xl mt-3 text-slate-300 leading-10">
-            This online calculator you can use for computing the average
-            molecular weight (MW) of molecules by entering the chemical formulas
-            (for example C3H4OH(COOH)3 ). Or you can choose by one of the next
-            two option-lists, which contains a series of common organic
-            compounds (including their chemical formula) and all the elements.
+          This online calculator is used for computing the mass in grams(g) of deep eutectic solvent components by entering the components (for example choline chloride). Or you can choose one of the next two option lists, which contains a series of common organic compounds (including their chemical formula) and all the compounds.
           </p>
         </div>
 
-        <nav className="bg-[#292b2c] py-6 px-6 md:px-12 sticky top-0 z-10 grid grid-cols-3 gap-x-6 gap-y-8 items-center border-b border-slate-700">
+        <nav className="bg-[#292b2c] py-6 px-6 md:px-12 sticky top-0 z-10  grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-8 items-center border-b border-slate-700">
           <UiInput
             type="number"
             placeholder="Mass of DES"
@@ -34,7 +30,7 @@ function App() {
             required
             onChange={(e)=> set_mass_of_des(Number(e.target.value))}
           />
-          <span className="text-center">
+          <span className="text-center hidden md:block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

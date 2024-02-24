@@ -4,7 +4,7 @@ import { MassCalcContext } from "../../context/mass_calc_privider";
 const Add = () => {
   const {handleAddForm} = useContext(MassCalcContext)
   return (
-    <div className="flex justify-center items-center bg-[#28292b] rounded-md py-8 px-12 shadow-md min-h-[240px]">
+    <div className="flex justify-center items-center bg-[#28292b] rounded-md py-8 px-12 shadow-md min-h-[260px]">
       <div className="-inline-block p-6 bg-[#484b4d] cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
