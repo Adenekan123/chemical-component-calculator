@@ -35,6 +35,7 @@ const Form = ({ values, index }: { values: Tforms; index: number }) => {
             <UiInput
               label="Select component"
               name="component"
+              placeholder="type / select"
               onChange={({ target }) =>
                 updateFormFields(index, "component", {
                   ...values.component,
@@ -70,6 +71,7 @@ const Form = ({ values, index }: { values: Tforms; index: number }) => {
 
           <UiInput
             label="Molecular Weight"
+            placeholder="Enter here"
             type="number"
             value={
               formDetails.component.mw ? Number(formDetails.component.mw) : ""
@@ -86,6 +88,7 @@ const Form = ({ values, index }: { values: Tforms; index: number }) => {
         <UiInput
           label="Molar ratio"
           type="number"
+          placeholder="Enter here"
           name="molar_ratio"
           id="molar_ratio"
           value={formDetails.molar_ratio ? Number(formDetails.molar_ratio) : ""}

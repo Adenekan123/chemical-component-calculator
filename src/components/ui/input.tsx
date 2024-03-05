@@ -16,7 +16,7 @@ const UiInput = ({ label, ...rest }: TInput) => {
       </label>
       <input
         {...rest}
-        className="p-4 bg-[#313335] rounded-sm text-white border-0 outline-white focus:outline-white shadow-none placeholder:text-slate-300 block w-full"
+        className="p-4 bg-[#313335] rounded-sm text-white border-0 outline-white focus:outline-white shadow-none placeholder:text-slate-400 block w-full"
       />
     </div>
   );
