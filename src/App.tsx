@@ -10,7 +10,7 @@ import { MassCalcContext } from "./context/mass_calc_privider";
 function App() {
   const { forms,calculate,set_mass_of_des } = useContext(MassCalcContext);
   return (
-    <div className="wrapper w-full min-h-screen bg-gradient-to-tr from-[#414345] to-[#292b2c] px-0 md:px-72 py-8">
+    <div className="wrapper w-full min-h-screen bg-gradient-to-tr from-[#414345] to-[#292b2c] px-0  xl:px-72 py-8">
       <header className="text-center">
         <div className="px-6 md:px-0 mb-12">
           <h2 className="font-[Orbitron] font-bold text-4xl md:text-5xl text-[#a5d8ff]">
@@ -56,7 +56,7 @@ function App() {
             </button>
           </div>
         </nav>
-        <section className="main text-sm font-[Lato] grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-12 bg-[#323436] px-6 md:px-12 py-8 shadow-lg">
+        <section className="main text-sm font-[Lato] grid grid-cols-1 lg:grid-cols-2 gap-y-8 gap-x-12 bg-[#323436] px-6 md:px-12 py-8 shadow-lg">
           {forms.map((form, index) => (
             <Form key={"form" + index} values={form} index={index} />
           ))}
