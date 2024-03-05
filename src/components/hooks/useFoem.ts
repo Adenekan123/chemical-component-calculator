@@ -20,12 +20,10 @@ const useFoem = () => {
     name: keyof Tforms,
     value: TComponents | number
   ) => {
-    console.log({ index, name, value });
     const newForms = forms.map((form, i) => {
       if (index === i) return { ...form, [name]: value };
       return form;
     });
-    console.log(newForms, "--");
 
     setForms(newForms);
   };
@@ -42,7 +40,6 @@ const useFoem = () => {
 
   const handleCalculation = useCallback(
     (mass_of_des: number) => {
-      console.log(forms);
       const newForms = forms.map((form, index) => {
         if (!form.component || !form.molar_ratio) return form;
         const { molar_ratio, component } = form;

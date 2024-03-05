@@ -3,12 +3,17 @@ import { TComponents, Tforms } from "../../types";
 import { Button, Modal } from "flowbite-react";
 import UiInput from "./input";
 import { MassCalcContext } from "../../context/mass_calc_privider";
+import { ComponentModal } from "./modal";
 
 const Form = ({ values, index }: { values: Tforms; index: number }) => {
   const { updateFormFields, components, forms } = useContext(MassCalcContext);
   const [openModal, setOpenModal] = useState(false);
 
-  const handleSelectComponent = useCallback(
+  const formDetails = useMemo(() => {
+    return values;
+  }, [values]);
+
+  const selectComponent = useCallback(
     (component: TComponents) => {
       updateFormFields(index, "component", component);
       setOpenModal(false);
@@ -16,50 +21,50 @@ const Form = ({ values, index }: { values: Tforms; index: number }) => {
     [index, updateFormFields]
   );
 
-  const formDetails = useMemo(() => {
-    return values;
-  }, [values]);
-
   return (
     <>
-      <Modal show={openModal} onClose={() => setOpenModal(false)} className="bg-black">
-        <Modal.Header>Component Lists</Modal.Header>
-        <Modal.Body>
-          <div className="flex flex-col">
-            {components.map((item: TComponents, index: number) =>
-              item && item.components ? (
-                <Button
-                  color="white"
-                  className="justify-start hover:bg-slate-100"
-                  fullSized
-                  key={index + "cmp"}
-                  onClick={() => handleSelectComponent(item)}
-                >
-                  {item.components}
-                </Button>
-              ) : null
-            )}
-          </div>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button color="gray" onClick={() => setOpenModal(false)}>
-            close
-          </Button>
-        </Modal.Footer>
-      </Modal>
+      <ComponentModal
+        list={components}
+        selectComponent={selectComponent}
+        show={openModal}
+        close={() => setOpenModal(false)}
+      />
       <form className="flex flex-col gap-y-6 bg-[#28292b] rounded-lg py-8 px-6 md:px-12 shadow-md">
         <div className="grid grid-cols-2 gap-x-6 gap-y-8">
-          <div className="flex flex-col gap-y-2 text-left span">
-            <div className="block">
-              <label htmlFor="mratio" className="text-slate-300 md:text-lg block mb-1">
-                Select Component:
-              </label>
-            </div>
+          <div className="relative gap-y-2 text-left span">
+            <UiInput
+              label="Select component"
+              name="component"
+              onChange={({ target }) =>
+                updateFormFields(index, "component", {
+                  ...values.component,
+                  components: target.value,
+                })
+              }
+              value={
+                formDetails.component ? formDetails.component.components : ""
+              }
+              required
+            />
             <Button
-              className="p-1 bg-[#313335] rounded-sm text-white border-0 outline-white focus:outline-white shadow-none justify-start h-[56px]"
+              color="secondary"
+              className=" rounded-none absolute right-2 h-10 w-10  bottom-0 -translate-y-[10px]  bg-gray-700 text-white"
               onClick={() => setOpenModal(true)}
             >
-              {formDetails.component ? formDetails.component.components : ""}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-4 h-4"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
             </Button>
           </div>
 
@@ -70,7 +75,12 @@ const Form = ({ values, index }: { values: Tforms; index: number }) => {
               formDetails.component.mw ? Number(formDetails.component.mw) : ""
             }
             required
-            readOnly
+            onChange={({ target }) =>
+              updateFormFields(index, "component", {
+                ...values.component,
+                mw: Number(target.value),
+              })
+            }
           />
         </div>
         <UiInput
@@ -89,8 +99,8 @@ const Form = ({ values, index }: { values: Tforms; index: number }) => {
           {" "}
           {formDetails.result ? (
             <>
-              <span className="text-slate-300">Mass of components (g)</span> <span>=</span>{" "}
-              <span>{formDetails.result.toLocaleString()}</span>
+              <span className="text-slate-300">Mass of components (g)</span>{" "}
+              <span>=</span> <span>{formDetails.result.toLocaleString()}</span>
             </>
           ) : null}
         </h3>
