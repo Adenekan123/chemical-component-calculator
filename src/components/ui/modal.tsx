@@ -1,4 +1,8 @@
-import { Button, Modal } from "flowbite-react";
+import {
+  Button,
+  CustomFlowbiteTheme,
+  Modal,
+} from "flowbite-react";
 import React, { useMemo, useState } from "react";
 import { TComponents } from "../../types";
 import UiInput from "./input";
@@ -8,6 +12,18 @@ type PropTypes = {
   selectComponent: (v: TComponents) => void;
   show: boolean;
   close: () => void;
+};
+
+const theme: CustomFlowbiteTheme["modal"] = {
+  content: {
+    base: "relative h-full w-full p-4 md:h-auto",
+    inner:
+      "relative flex max-h-[90dvh] flex-col rounded-lg bg-[#28292b] shadow dark:bg-gray-700",
+  },
+  "footer": {
+    "base": "flex items-center space-x-2 rounded-b border-gray-700 p-6 dark:border-gray-600",
+    "popup": "border-t"
+  }
 };
 
 export const ComponentModal = (props: PropTypes) => {
@@ -24,7 +40,7 @@ export const ComponentModal = (props: PropTypes) => {
     return components.map((item: TComponents, index: number) =>
       item && item.components ? (
         <Button
-          color="white"
+          color="transparent"
           className="justify-start hover:bg-slate-600"
           fullSized
           key={index + "cmp"}
@@ -38,7 +54,7 @@ export const ComponentModal = (props: PropTypes) => {
   }, [list, searchText, selectComponent]);
 
   return (
-    <Modal show={show} onClose={close} className="bg-black">
+    <Modal theme={theme} show={show} onClose={close} className="bg-black">
       <div className="w-full border-b border-gray-500 pb-4 pt-1 px-6">
         <UiInput
           type="search"

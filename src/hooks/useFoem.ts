@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react";
-import { TComponents, Tforms } from "../../types";
+import { TComponents, Tforms } from "../types";
 
 const intial_form_state = {
   result: 0,
